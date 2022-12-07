@@ -7,8 +7,20 @@ $(document).ready(function () {
 	'use strict';
 
 	oTable = $('#example').dataTable({
-		"bJQueryUI": true,
-		"bStateSave": true
+		"responsive": true,
+					        "processing": true,
+					        "ajax": "/kiemtradonthuoc/resources/Deep.txt",
+					        "columns": [{
+					            "data": "engine"
+					        }, {
+					            "data": "browser"
+					        }, {
+					            "data": "platform.inner"
+					        }, {
+					            "data": "platform.details.0"
+					        }, {
+					            "data": "platform.details.1"
+					        }]
 	}).yadcf([
 	    {column_number : 0, filter_type: "multi_select", select_type: 'select2'},
 	    {column_number : 1, filter_type: "multi_select", select_type: 'select2'},
