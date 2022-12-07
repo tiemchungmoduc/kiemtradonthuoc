@@ -34,13 +34,51 @@
 </style>  
 
 <script>
-$(document).ready(function(){
-  $('#example').dataTable().yadcf([
-		{column_number : 0},
-	    {column_number : 1,  filter_type: "range_number_slider", filter_container_id: "external_filter_container"},
-	    {column_number : 2, data: ["Yes", "No"], filter_default_label: "Select Yes/No"},
-	    {column_number : 3, text_data_delimiter: ",", filter_type: "auto_complete"},
-	    {column_number : 4, column_data_type: "html", html_data_type: "text", filter_default_label: "Select tag"}]);
+$(document).ready(function () {
+    'use strict';
+     
+    //----------------------------------------------
+    //note that this is the old yadcf API for init the filters 
+    //new init function should be used when working with new Datatable (capital "D" API)
+    //for new init function see: http://yadcf-showcase.appspot.com/DOM_Ajax_Multiple_1.10.html
+    //----------------------------------------------
+ 
+    oTable = $('#example').dataTable({
+        "bJQueryUI": true,
+        "bStateSave": true
+    }).yadcf([{
+        column_number: 0,
+        filter_type: "multi_select",
+        select_type: 'select2'
+    }, {
+        column_number: 1,
+        filter_type: "range_number_slider"
+    }, {
+        column_number: 2,
+        select_type: 'select2',
+        select_type_options: {
+            width: '150px',
+            minimumResultsForSearch: -1 // remove search box
+        }
+    }, {
+        column_number: 3,
+        filter_type: "text",
+        text_data_delimiter: ",",
+        exclude: true
+    }, {
+        column_number: 4,
+        select_type: 'select2',
+        select_type_options: {
+            width: '150px'
+            placeholder: 'Select tag',
+            allowClear: true  // show 'x' (remove) next to selection inside the select itself
+        },
+        column_data_type: "html",
+        html_data_type: "text",
+        filter_reset_button_text: false // hide yadcf reset button
+    }]);
+ 
+    SyntaxHighlighter.all();
 });
 </script>
 <meta charset=utf-8 />
