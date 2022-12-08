@@ -1,7 +1,7 @@
 /*global $, SyntaxHighlighter*/
 
 
-var oTable2;
+var oTable;
 
 $(document).ready(function () {
     'use strict';
@@ -23,7 +23,7 @@ $(document).ready(function () {
         }]
     });
 
-    yadcf.init(oTable2, [{
+    yadcf.init(oTable, [{
         column_number: 0
     }, {
         column_number: 1,
@@ -41,7 +41,7 @@ $(document).ready(function () {
         column_number: 4
     }]);
     
-	yadcf.exFilterColumn(oTable2, [[0, "Misc"]]);
+	yadcf.exFilterColumn(oTable, [[0, "Misc"]]);
 	
     SyntaxHighlighter.all();
 
