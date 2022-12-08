@@ -9,7 +9,7 @@ $(document).ready(function () {
     oTable = $('#example').DataTable({
     	"responsive": true,
         "processing": true,
-        "ajax": "/kiemtradonthuoc/resources/Deep.txt",
+        "ajax": "/kiemtradonthuoc/resources/deep.txt",
         "columns": [{
             "data": "engine"
         }, {
