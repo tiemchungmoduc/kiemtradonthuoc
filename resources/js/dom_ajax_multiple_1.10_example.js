@@ -35,7 +35,7 @@ $(document).ready(function () {
     oTable2 = $('#entrys_table').DataTable({
     	"responsive": true,
         "processing": true,
-        "ajax": "kiemtradonthuoc/resources/deep.txt",
+        "ajax": "resources/deep.txt",
         "columns": [{
             "data": "engine"
         }, {
