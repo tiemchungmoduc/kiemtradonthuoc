@@ -6,7 +6,7 @@ var oTable;
 $(document).ready(function () {
     'use strict';
 
-    oTable2 = $('#example').DataTable({
+    oTable = $('#example').DataTable({
     	"responsive": true,
         "processing": true,
         "ajax": "/kiemtradonthuoc/resources/Deep.txt",
