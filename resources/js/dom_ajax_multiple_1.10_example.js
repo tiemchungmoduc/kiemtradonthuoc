@@ -58,7 +58,8 @@ $(document).ready(function () {
         exclude_label: '!(not)'
     }, {
         column_number: 2,
-        filter_type: "auto_complete"
+        filter_type: "multi_select", 
+	select_type: 'select2'
     }, {
         column_number: 3,
         filter_type: "range_number_slider",
