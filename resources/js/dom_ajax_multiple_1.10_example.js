@@ -1,15 +1,41 @@
 /*global $, SyntaxHighlighter*/
 
 
-var oTable;
+var oTable,
+	oTable2;
 
 $(document).ready(function () {
     'use strict';
 
+    
     oTable = $('#example').DataTable({
+		//stateSave: true,
+		fixedHeader: true
+    });
+    
+    yadcf.init(oTable, [{
+        column_number: 0
+    }, {
+        column_number: 1,
+        filter_type: "range_number_slider"
+    }, {
+        column_number: 2,
+        filter_type: "date"
+    }, {
+        column_number: 3,
+        filter_type: "auto_complete",
+        text_data_delimiter: ","
+    }, {
+        column_number: 4,
+        column_data_type: "html",
+        html_data_type: "text",
+        filter_default_label: "Select tag"
+    }]);
+
+    oTable2 = $('#entrys_table').DataTable({
     	"responsive": true,
         "processing": true,
-        "ajax": "/kiemtradonthuoc/resources/deep.txt",
+        "ajax": "kiemtradonthuoc/resources/deep.txt",
         "columns": [{
             "data": "engine"
         }, {
@@ -23,7 +49,7 @@ $(document).ready(function () {
         }]
     });
 
-    yadcf.init(oTable, [{
+    yadcf.init(oTable2, [{
         column_number: 0
     }, {
         column_number: 1,
@@ -41,8 +67,11 @@ $(document).ready(function () {
         column_number: 4
     }]);
     
-	yadcf.exFilterColumn(oTable, [[0, "Misc"]]);
+	yadcf.exFilterColumn(oTable2, [[0, "Misc"]]);
 	
+	yadcf.initMultipleTables([oTable, oTable2], [{
+		filter_container_id: 'multi-table-filter', filter_default_label: 'Filter all tables!'
+	}]);
     SyntaxHighlighter.all();
 
 });
