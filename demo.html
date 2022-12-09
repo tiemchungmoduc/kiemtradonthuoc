@@ -14,7 +14,16 @@
     <title>DataTables - JS Bin</title>
   </head>
   <body>
-    
+    <style>
+      body {
+  font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+}
+
+    </style>
     Search: <div id="s_suche"></div>
     
     
@@ -502,5 +511,22 @@
         </tbody>
       </table>
     </div>
+    <script>
+      $(document).ready( function () {
+  oTable = $('#example').DataTable();
+  
+  
+  yadcf.initMultipleColumns(oTable, [{
+        column_number: [0, 1], 
+        filter_container_id: 's_suche', 
+        filter_default_label: 'Search all',
+        filter_match_mode : "contains",
+        //filter_type: 'select'
+    }]);
+  
+  
+} );
+
+    </script>
   </body>
 </html>
