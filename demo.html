@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset=utf-8 />
+	<title>KIỂM TRA ĐƠN THUỐC</title>
+	<link href="resources/css/chosen.min.css" rel="stylesheet" type="text/css" />
+	
+	<link href="resources/css/jquery.dataTables.10.min.css" rel="stylesheet" type="text/css"></link>
+	<link href="resources/css/dataTables.colVis.css" rel="stylesheet" type="text/css"></link>
+	<link href="resources/css/dataTables.jqueryui.css" rel="stylesheet" type="text/css"></link>
+	<link href="resources/css/dataTables.responsive.css" rel="stylesheet" type="text/css" />
+	<link href="resources/css/jquery-ui.1.9.0.css" rel="stylesheet" type="text/css" />
+	<link href="resources/css/fixedHeader.dataTables.min.css" rel="stylesheet" type="text/css" />	
+	<link href="resources/css/jquery.dataTables.yadcf.0.9.2.css" rel="stylesheet" type="text/css" />
+	<link href="resources/css/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="resources/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+	<link href="resources/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="resources/css/select2.css" rel="stylesheet" type="text/css" />
+		
+	<script src="resources/js/jquery-1.8.2.min.js"></script>
+	<script src="resources/js/jquery-ui.1.9.0.js"></script>
+	<script src="resources/js/chosen.jquery.min.js"></script>
+	<script src="resources/js/jquery.dataTables.10.min.js"></script>
+	<script src="resources/js/dataTables.fixedHeader.min.js"></script>
+	<script src="resources/js/dataTables.responsive.js"></script>
+	<script src="resources/js/dataTables.jqueryui.js"></script>
+	<script src="resources/js/dataTables.colVis.js"></script>
+	<script src="resources/js/jquery.dataTables.yadcf.0.9.2.js"></script>
+	<script src="resources/js/demo.js"></script>
+	<script type="text/javascript" src="resources/js/shCore.js"></script>
+	<script type="text/javascript" src="resources/js/shBrushJScript.js"></script>
+	<script src="resources/js/select2.js"></script>
+
+	
+	<style>
+		.label {
+			padding: 0px 10px 0px 10px;
+			border: 1px solid #ccc;
+			-moz-border-radius: 1em; /* for mozilla-based browsers */
+			-webkit-border-radius: 1em; /* for webkit-based browsers */
+			border-radius: 1em; /* theoretically for *all* browsers*/
+		}
+		
+		.label.lightblue {
+			background-color: #99CCFF;
+		}
+		
+		#external_filter_container_wrapper {
+		  margin-bottom: 20px;
+		}
+		
+		#external_filter_container {
+		  display: inline-block;
+		}
+			
+	</style>
+	
+
+</head>
+ <body>
+	
+   	<div class="container_wrapper">
+   	 	<div id="description">
+	   	 	<h1>KIỂM TRA TƯƠNG TÁC THUỐC</h1>
+	   	 		   	 	
+   	 	</div>
+   	 	<div id="local_hrefs" class='hide'>
+   	 		<a href="#features">Features</a>
+			<a href="#source_code">View source</a>
+			<a href="#all_params">All params</a>
+   	 	</div>
+  		<div class="container">
+	      <div id="external_filter_container_wrapper" class="">
+	        <label>yadcf.initMultipleTables:</label>
+	        <span id="multi-table-filter"></span>
+	      </div>
+		  <div id="table_1">
+			  <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+				<thead>
+				  <tr>
+					<th>Some Data</th>
+					<th>Numbers</th>
+					<th>Dates</th>
+					<th>Values</th>
+					<th>Tags</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr class="odd gradeX">
+					<td>Some Data 1</td>
+					<td>1000</td>
+					<td>01/24/2014</td>
+					<td>a_value,b_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="even gradeC">
+					<td>Some Data 2</td>
+					<td>22</td>
+					<td>02/20/2014</td>
+					<td>b_value,c_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag3</span></td>
+				  </tr>
+				  <tr class="odd gradeA">
+					<td>Some Data 3</td>
+					<td>33</td>
+					<td>02/26/2014</td>
+					<td>a_value</td>
+					<td><span class="label lightblue">Tag2</span><span class="label lightblue">Tag3</span></td>
+				  </tr>
+				  <tr class="even gradeA">
+					<td>Some Data 4</td>
+					<td>44</td>
+					<td>02/11/2014</td>
+					<td>b_value</td>
+					<td><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="odd gradeA">
+					<td>Some Data 5</td>
+					<td>55</td>
+					<td>02/29/2014</td>
+					<td>a_value,b_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="even gradeA">
+					<td>Some Data 1</td>
+					<td>111</td>
+					<td>11/24/2014</td>
+					<td>c_value,d_value</td>
+					<td><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 2</td>
+					<td>222</td>
+					<td>02/03/2014</td>
+					<td>e_value,f_value</td>
+					<td><span class="label lightblue">Tag3</span><span class="label lightblue">Tag4</span><span class="label lightblue">Tag5</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 3</td>
+					<td>33</td>
+					<td>02/03/2014</td>
+					<td>a_value,bb_value</td>
+					<td><span class="label lightblue">Tag5</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 4</td>
+					<td>444</td>
+					<td>03/24/2014</td>
+					<td>a_value,f_value</td>
+					<td><span class="label lightblue">Tag4</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 5</td>
+					<td>55</td>
+					<td>03/22/2014</td>
+					<td>a_value,c_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 1</td>
+					<td>300</td>
+					<td>02/20/2014</td>
+					<td>a_value,b_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag3</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 2</td>
+					<td>242</td>
+					<td>02/04/2014</td>
+					<td>d_value,aa_value</td>
+					<td><span class="label lightblue">Tag1</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 3</td>
+					<td>703</td>
+					<td>02/05/2014</td>
+					<td>a_value,c_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 4</td>
+					<td>604</td>
+					<td>02/25/2014</td>
+					<td>a_value,bb_value</td>
+					<td><span class="label lightblue">Tag1</span><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 5</td>
+					<td>550</td>
+					<td>02/01/2014</td>
+					<td>c_value,e_value</td>
+					<td><span class="label lightblue">Tag2</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 1</td>
+					<td>901</td>
+					<td>02/02/2014</td>
+					<td>a_value,e_value</td>
+					<td><span class="label lightblue">Tag1</span></td>
+				  </tr>
+				  <tr class="gradeA">
+					<td>Some Data 11</td>
+					<td>911</td>
+					<td>02/22/2014</td>
+					<td>a_value,e_value</td>
+					<td><span class="label lightblue">Tag11</span></td>
+				  </tr>				  
+				</tbody>
+			  </table>
+			</div>
+			<br><br>
+			<div id="table_2">
+				<table cellpadding="0" cellspacing="0" border="0" class="display" id="entrys_table" width="100%">
+					<thead>
+						<tr>
+							<th width="20%">Rendering engine</th>
+							<th width="25%">Browser</th>
+							<th width="25%">Platform(s)</th>
+							<th width="15%">Engine version</th>
+							<th width="15%">CSS grade</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+    </div>
+	
+  </body>
+</html>
