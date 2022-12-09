@@ -8,10 +8,7 @@ $(document).ready(function () {
     'use strict';
 
     
-    oTable = $('#example').DataTable({
-		//stateSave: true,
-		fixedHeader: true
-    });
+    oTable = $('#example').DataTable();
     yadcf.initMultipleColumns([oTable], [{
 		column_number: [0, 1],
 		filter_container_id: 'kiem-tra-don-thuoc', 
