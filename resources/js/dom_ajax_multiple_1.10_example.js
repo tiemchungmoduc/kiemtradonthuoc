@@ -70,10 +70,10 @@ $(document).ready(function () {
     
 	yadcf.exFilterColumn(oTable2, [[0, "Misc"]]);
 	
-	yadcf.initMultipleColumns([oTable], [{
-		column_number: [0, 1],
-		filter_container_id: 'multi-table-filter', 
-		filter_default_label: 'Filter all tables!',
+	yadcf.initMultipleColumns(oTable, [{
+		column_number: [0, 1], 
+		filter_container_id: 'multi-column-filter-01', 
+		filter_default_label: 'First table columns 1 and 2!',
 		filter_match_mode : "contains",
 		filter_type: 'multi_select',
         	select_type: 'select2'
