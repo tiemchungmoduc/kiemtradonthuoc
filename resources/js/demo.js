@@ -12,7 +12,14 @@ $(document).ready(function () {
 		//stateSave: true,
 		fixedHeader: true
     });
-    
+    yadcf.initMultipleColumns([oTable], [{
+		column_number: [0, 1],
+		filter_container_id: 'kiem-tra-don-thuoc', 
+		filter_default_label: 'Nhập hoạt chất',
+		filter_match_mode : "contains",
+		filter_type: 'multi_select',
+        	select_type: 'select2'
+	}]);
     
 
     oTable2 = $('#entrys_table').DataTable({
@@ -53,14 +60,7 @@ $(document).ready(function () {
     
 	yadcf.exFilterColumn(oTable2, [[0, "Misc"]]);
 	
-	yadcf.initMultipleColumns([oTable], [{
-		column_number: [0, 1],
-		filter_container_id: 'kiem-tra-don-thuoc', 
-		filter_default_label: 'Nhập hoạt chất',
-		filter_match_mode : "contains",
-		filter_type: 'multi_select',
-        	select_type: 'select2'
-	}]);
+	
     SyntaxHighlighter.all();
 
 });
