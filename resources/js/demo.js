@@ -1,12 +1,7 @@
 /*global $, SyntaxHighlighter*/
 
 
-var oTable,
-	oTable2;
-
 $(document).ready(function () {
-    'use strict';
-
     
     oTable = $('#example').DataTable();
     yadcf.initMultipleColumns([oTable], [{
