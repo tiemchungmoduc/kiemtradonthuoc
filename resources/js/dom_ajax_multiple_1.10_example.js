@@ -68,9 +68,8 @@ $(document).ready(function () {
         column_number: 4
     }]);
     
-	yadcf.exFilterColumn(oTable2, [[0, "Misc"]]);
 	
-	yadcf.initMultipleColumns(oTable, [{
+	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [0, 1], 
 		filter_container_id: 'multi-column-filter-01', 
 		filter_default_label: 'First table columns 1 and 2!',
