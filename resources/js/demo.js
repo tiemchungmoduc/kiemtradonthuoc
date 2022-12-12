@@ -11,6 +11,8 @@ $(document).ready(function () {
         "processing": true,
         "ajax": "resources/deep.txt",
         "columns": [{
+            "data": "STT"
+        }, {
             "data": "Hoạt chất 1"
         }, {
             "data": "Hoạt chất 2"
