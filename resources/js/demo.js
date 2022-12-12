@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 	
         yadcf.initMultipleColumns(oTable, [{
-		column_number: [0, 1], 
+		column_number: [1, 2], 
 		filter_container_id: 'kiem-tra-don-thuoc', 
 		filter_default_label: 'Nhập tên thuốc',
 		filter_match_mode : "contains",
