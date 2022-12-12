@@ -11,15 +11,15 @@ $(document).ready(function () {
         "processing": true,
         "ajax": "resources/deep.txt",
         "columns": [{
-            "data": "engine"
+            "data": "Hoạt chất 1"
         }, {
-            "data": "browser"
+            "data": "Hoạt chất 2"
         }, {
-            "data": "platform.inner"
+            "data": "Cơ chế"
         }, {
-            "data": "platform.details.0"
+            "data": "Hậu quả"
         }, {
-            "data": "platform.details.1"
+            "data": "Xử trí"
         }]
     });
 
