@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     
-    oTable = $('#table_2').DataTable();
+    oTable = $('#entrys_table').DataTable();
     yadcf.initMultipleColumns([oTable], [{
 		column_number: [0, 1],
 		filter_container_id: 'kiem-tra-don-thuoc', 
