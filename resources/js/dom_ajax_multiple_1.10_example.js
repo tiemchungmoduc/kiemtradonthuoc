@@ -31,21 +31,20 @@ $(document).ready(function () {
         column_number: 0
     }, {
         column_number: 1,
-        filter_type: "range_number_slider"
+        filter_type: "text",
+        exclude: true,
+        exclude_label: '!(not)'
     }, {
         column_number: 2,
-        filter_type: "date"
+        filter_type: "multi_select", 
+	select_type: 'select2'
     }, {
         column_number: 3,
-        filter_type: "auto_complete",
-        text_data_delimiter: ","
+        filter_type: "range_number_slider",
+        ignore_char: "-"
     }, {
-        column_number: 4,
-        column_data_type: "html",
-        html_data_type: "text",
-        filter_default_label: "Select tag"
+        column_number: 4
     }]);
-
     oTable2 = $('#entrys_table').DataTable({
     	"responsive": true,
         "processing": true,
