@@ -7,22 +7,8 @@ $(document).ready(function () {
     'use strict';
 
     oTable2 = $('#entrys_table').DataTable({
-    	"responsive": true,
-        "processing": true,
-        "ajax": "resources/deep.txt",
-        "columns": [{
-            "data": "STT"
-        }, {
-            "data": "Hoạt chất 1"
-        }, {
-            "data": "Hoạt chất 2"
-        }, {
-            "data": "Cơ chế"
-        }, {
-            "data": "Hậu quả"
-        }, {
-            "data": "Xử trí"
-        }]
+    	//stateSave: true,
+		fixedHeader: true
     });
 
 	yadcf.initMultipleColumns(oTable2, [{
