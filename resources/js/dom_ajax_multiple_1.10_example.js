@@ -14,7 +14,7 @@ $(document).ready(function () {
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
 		filter_container_id: 'multi-column-filter-01', 
-		filter_default_label: 'First table columns 1 and 2!',
+		filter_default_label: 'Nhập tên hoạt chất',
 		filter_match_mode : "contains",
 		filter_type: 'multi_select',
         	select_type: 'select2'
