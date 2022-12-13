@@ -50,6 +50,8 @@ $(document).ready(function () {
         "processing": true,
         "ajax": "resources/deep.txt",
         "columns": [{
+            "data": "STT"
+        }, {
             "data": "Hoạt chất 1"
         }, {
             "data": "Hoạt chất 2"
@@ -66,23 +68,25 @@ $(document).ready(function () {
         column_number: 0
     }, {
         column_number: 1,
-        filter_type: "text",
-        exclude: true,
-        exclude_label: '!(not)'
+        filter_type: "multi_select", 
+	select_type: 'select2'
     }, {
         column_number: 2,
         filter_type: "multi_select", 
 	select_type: 'select2'
     }, {
         column_number: 3,
-        filter_type: "range_number_slider",
-        ignore_char: "-"
+        filter_type: "select", 
+	select_type: 'select2'
     }, {
         column_number: 4
-    }]);
+    }, {
+        column_number: 5
+    }
+			]);
     
 	
-	yadcf.initMultipleColumns(oTable, [{
+	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [0, 1], 
 		filter_container_id: 'multi-column-filter-01', 
 		filter_default_label: 'First table columns 1 and 2!',
