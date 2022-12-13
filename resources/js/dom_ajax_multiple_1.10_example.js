@@ -13,17 +13,17 @@ $(document).ready(function () {
 		fixedHeader: true,
 	    "responsive": true,
         "processing": true,
-        "ajax": "resources/deep.txt",
+        "ajax": "resources/dit.txt",
         "columns": [{
-            "data": "Hoạt chất 1"
+            "data": "engine"
         }, {
-            "data": "Hoạt chất 2"
+            "data": "browser"
         }, {
-            "data": "Cơ chế"
+            "data": "platform.inner"
         }, {
-            "data": "Hậu quả"
+            "data": "platform.details.0"
         }, {
-            "data": "Xử trí"
+            "data": "platform.details.1"
         }]
     });
     
