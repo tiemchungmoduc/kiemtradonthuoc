@@ -1,5 +1,5 @@
 {
-  "data": [
+  "aaData": [
  {
    "STT": 1,
    "Hoạt chất 1": "Aceclofenac",
