@@ -10,7 +10,21 @@ $(document).ready(function () {
     
     oTable = $('#example').DataTable({
 		//stateSave: true,
-		fixedHeader: true
+		fixedHeader: true,
+	    "responsive": true,
+        "processing": true,
+        "ajax": "resources/deep.txt",
+        "columns": [{
+            "data": "Hoạt chất 1"
+        }, {
+            "data": "Hoạt chất 2"
+        }, {
+            "data": "Cơ chế"
+        }, {
+            "data": "Hậu quả"
+        }, {
+            "data": "Xử trí"
+        }]
     });
     
     yadcf.init(oTable, [{
