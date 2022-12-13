@@ -69,7 +69,7 @@ $(document).ready(function () {
     }]);
     
 	
-	yadcf.initMultipleColumns(oTable2, [{
+	yadcf.initMultipleColumns(oTable, [{
 		column_number: [0, 1], 
 		filter_container_id: 'multi-column-filter-01', 
 		filter_default_label: 'First table columns 1 and 2!',
