@@ -13,11 +13,11 @@ $(document).ready(function () {
     });
     yadcf.init(oTable2, [{
 					       column_number: 1,
-       						filter_type: "select",
+       						filter_type: "multi_select",
         					select_type: 'select2'
 					    }, {
 					       column_number: 2,
-        					filter_type: "select",
+        					filter_type: "multi_select",
         					select_type: 'select2'
 					    }]);
 	yadcf.initMultipleColumns(oTable2, [{
