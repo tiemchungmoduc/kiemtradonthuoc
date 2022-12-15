@@ -53,6 +53,108 @@
 		#external_filter_container {
 		  display: inline-block;
 		}
+		.modal {
+  display: block;
+  padding: 0 1em;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 43.75em) {
+  .modal {
+    padding: 1em 2em;
+    text-align: right;
+  }
+}
+.modal > label {
+  background: #000;
+  border-radius: .2em;
+  color: #FFDE16;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0.5em 1em;
+  padding: 0.75em 1.5em;
+  transition: all 0.55s;
+}
+.modal > label:hover {
+  transform: scale(0.97);
+}
+.modal input {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+  z-index: -10;
+}
+.modal__overlay {
+  background: black;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: -800;
+}
+.modal__box {
+  padding: 1em .75em;
+  position: relative;
+  margin: 1em auto;
+  max-width: 500px;
+  width: 90%;
+}
+@media (min-height: 37.5em) {
+  .modal__box {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+@media (min-width: 50em) {
+  .modal__box {
+    padding: 1.75em;
+  }
+}
+.modal__box label {
+  background: #FFDE16;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5em;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  width: 1.5em;
+}
+.modal__box h2 {
+  color: #FFDE16;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.modal__box p {
+  color: #FFDE16;
+  text-align: left;
+}
+ 
+.modal__overlay {
+  opacity: 0;
+  overflow: hidden;
+  transform: scale(0.5);
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+ 
+input:checked ~ .modal__overlay {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 800;
+}
+ 
+input:focus + label {
+  transform: scale(0.97);
+}
 			
 	</style>
 	
@@ -74,6 +176,25 @@
 		        <span id="multi-column-filter-01">
 			</span>
 	       	 	</center>
+			<div class="modal">
+    				<input id="modal" type="checkbox" name="modal" tab-index="1">     
+    					<label for="modal" >Giới thiệu</label>
+   					 <div class="modal__overlay">
+     					   <div class="modal__box">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Khoa Dược - VTYT, Trung tâm Y tế huyện Mộ Đức xây dựng bộ công cụ tra cứu điện tử để hỗ trợ nhân viên y tế tra cứu nhanh tương tác thuốc chống chỉ định theo Quyết định số 5948/QĐ-BYT ngày 30/12/2021 của Bộ Y tế. Công cụ này cho phép:
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:crimson">TRA CỨU NHANH</b> toàn bộ tương tác chống chỉ định của 1 hoạt chất bất kỳ.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:crimson">DUYỆT ĐƠN</b> kiểm tra tương tác thuốc chống chỉ định giữa các thuốc trong đơn.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đây là công cụ điện tử hỗ trợ công tác chuyên môn dành cho các bác sĩ, dược sĩ và các điều dưỡng giúp quản lý tương tác thuốc trong thực hành lâm sàng. Bộ cơ sở dữ liệu này chỉ ghi nhận các tương tác ở mức độ <b style="color:crimson">chống chỉ định</b>, nhìn chung không khuyến cáo sử dụng đồng thời các thuốc này trên bệnh nhân do nguy cơ vượt trội lợi ích thuốc có thể đem lại cho người bệnh. Do đó, việc không phát hiện được tương tác giữa hai thuốc khi kiểm tra bằng bộ công cụ ở đây <i>không có nghĩa</i> rằng không xảy ra tương tác trên bệnh nhân.
+            </p>	
+			</div>
+    </div>
+</div>
 	        
 	     	 </div>
 			<div id="table_2">
