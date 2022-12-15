@@ -11,15 +11,7 @@ $(document).ready(function () {
 		fixedHeader: true,
 	    "responsive": true
     });
-    yadcf.init(oTable2, [{
-					       column_number: 1,
-       						filter_type: "multi_select",
-        					select_type: 'select2'
-					    }, {
-					       column_number: 2,
-        					filter_type: "multi_select",
-        					select_type: 'select2'
-					    }]);
+    
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
 		filter_container_id: 'multi-column-filter-01', 
