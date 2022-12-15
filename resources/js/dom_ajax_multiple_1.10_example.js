@@ -5,11 +5,35 @@ var oTable2;
 
 $(document).ready(function () {
     'use strict';
-
+    var dataSrc = [];
     oTable2 = $('#entrys_table').DataTable({
     	//stateSave: true,
 		fixedHeader: true,
-	    "responsive": true
+	    "responsive": true,
+	     'initComplete': function(){
+         var api = this.api();
+
+         // Populate a dataset for autocomplete functionality
+         // using data from first, second and third columns
+         api.cells('tr', [1, 2]).every(function(){
+            // Get cell data as plain text
+            var data = $('<div>').html(this.data()).text();           
+            if(dataSrc.indexOf(data) === -1){ dataSrc.push(data); }
+         });
+         
+         // Sort dataset alphabetically
+         dataSrc.sort();
+        
+         // Initialize Typeahead plug-in
+         $('.dataTables_filter input[type="search"]', api.oTable2().container())
+            .typeahead({
+               source: dataSrc,
+               afterSelect: function(value){
+                  api.search(value).draw();
+               }
+            }
+         );
+      }
     });
     
 	yadcf.initMultipleColumns(oTable2, [{
