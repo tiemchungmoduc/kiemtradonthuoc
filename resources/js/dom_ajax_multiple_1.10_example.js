@@ -10,7 +10,14 @@ $(document).ready(function () {
 		fixedHeader: true,
 	    "responsive": true,
     });
-    
+        yadcf.initMultipleColumns(oTable2, [{
+		column_number: [1, 2], 
+		filter_container_id: 'multi-column-filter-00', 
+		filter_default_label: 'Nhập tên hoạt chất',
+		filter_match_mode : "contains",
+		filter_type: 'select',
+        	select_type: 'select2'
+	}]);
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
 		filter_container_id: 'multi-column-filter-01', 
