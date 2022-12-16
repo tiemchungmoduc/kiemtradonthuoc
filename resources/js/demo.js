@@ -22,6 +22,7 @@ $(document).ready(function () {
  var dataSrc = [];
 
    var table = $('#entrys_table').DataTable({
+	    destroy: true,
       'initComplete': function(){
          var api = this.api();
 
