@@ -24,6 +24,7 @@ $(document).ready(function () {
 
    var table = $('#entrys_table').DataTable({
 	    destroy: true,
+	   "ordering": false
       'initComplete': function(){
          var api = this.api();
 
