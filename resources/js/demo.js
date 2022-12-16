@@ -9,6 +9,7 @@ $(document).ready(function () {
     	//stateSave: true,
 		fixedHeader: true,
 	    "responsive": true,
+	     ordering: false
     });
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
