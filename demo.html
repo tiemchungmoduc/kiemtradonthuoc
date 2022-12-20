@@ -170,22 +170,28 @@ input:focus + label {
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Giới thiệu</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Hướng dẫn</button>
 <!-- Vertically centered modal -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-  <p>
-                 Khoa Dược - VTYT, Trung tâm Y tế huyện Mộ Đức xây dựng bộ công cụ tra cứu điện tử để hỗ trợ nhân viên y tế tra cứu nhanh tương tác thuốc chống chỉ định theo Quyết định số 5948/QĐ-BYT ngày 30/12/2021 của Bộ Y tế. Công cụ này cho phép:
-            </p>
-            <p>
-                <b style="color:crimson">TRA CỨU NHANH</b> toàn bộ tương tác chống chỉ định của 1 hoạt chất bất kỳ.
-                <br> 
-                <b style="color:crimson">DUYỆT ĐƠN</b> kiểm tra tương tác thuốc chống chỉ định giữa các thuốc trong đơn.
-            </p>
-            <p>
-               Đây là công cụ điện tử hỗ trợ công tác chuyên môn dành cho các bác sĩ, dược sĩ và các điều dưỡng giúp quản lý tương tác thuốc trong thực hành lâm sàng. Bộ cơ sở dữ liệu này chỉ ghi nhận các tương tác ở mức độ <b style="color:crimson">chống chỉ định</b>, nhìn chung không khuyến cáo sử dụng đồng thời các thuốc này trên bệnh nhân do nguy cơ vượt trội lợi ích thuốc có thể đem lại cho người bệnh. Do đó, việc không phát hiện được tương tác giữa hai thuốc khi kiểm tra bằng bộ công cụ ở đây <i style="color:crimson">không có nghĩa</i> rằng không xảy ra tương tác trên bệnh nhân.
-            </p>	
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Modal Body</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Vertically centered scrollable modal -->
-<div class="modal fade" id="exampleModal2" tabindex="0" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" role="dialog" aria-hidden="true">
    <div>
                 <b style="color:crimson">TRA CỨU NHANH</b> toàn bộ tương tác chống chỉ định của 1 hoạt chất bất kỳ.
                 <br>
