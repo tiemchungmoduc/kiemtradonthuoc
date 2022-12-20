@@ -167,38 +167,26 @@ input:focus + label {
    	 	<div id="description">
 	   	 	<h1>KIỂM TRA TƯƠNG TÁC THUỐC</h1> 	 	
    	 	</div>  
-		<div class="model">   
-					<input class="hide" id="model" type="checkbox" name="model" tab-index="1">
-    					<label for="model" >Giới thiệu</label>
-   					 <div class="model__overlay">
-     					   <div class="model__box">
-					<label for="model">✖</label>
-            <p>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo">Giới thiệu</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@fat">Hướng dẫn</button>
+<!-- Vertically centered modal -->
+<div class="modal-dialog modal-dialog-centered" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <p>
                  Khoa Dược - VTYT, Trung tâm Y tế huyện Mộ Đức xây dựng bộ công cụ tra cứu điện tử để hỗ trợ nhân viên y tế tra cứu nhanh tương tác thuốc chống chỉ định theo Quyết định số 5948/QĐ-BYT ngày 30/12/2021 của Bộ Y tế. Công cụ này cho phép:
             </p>
             <p>
                 <b style="color:crimson">TRA CỨU NHANH</b> toàn bộ tương tác chống chỉ định của 1 hoạt chất bất kỳ.
-                <br>
-		    <img src="resources/images/tuong-tac-thuoc-1.png" />
-		<br>  
+                <br> 
                 <b style="color:crimson">DUYỆT ĐƠN</b> kiểm tra tương tác thuốc chống chỉ định giữa các thuốc trong đơn.
-		<br>
-		    <img src="resources/images/tuong-tac-thuoc-2.png" />
             </p>
             <p>
                Đây là công cụ điện tử hỗ trợ công tác chuyên môn dành cho các bác sĩ, dược sĩ và các điều dưỡng giúp quản lý tương tác thuốc trong thực hành lâm sàng. Bộ cơ sở dữ liệu này chỉ ghi nhận các tương tác ở mức độ <b style="color:crimson">chống chỉ định</b>, nhìn chung không khuyến cáo sử dụng đồng thời các thuốc này trên bệnh nhân do nguy cơ vượt trội lợi ích thuốc có thể đem lại cho người bệnh. Do đó, việc không phát hiện được tương tác giữa hai thuốc khi kiểm tra bằng bộ công cụ ở đây <i style="color:crimson">không có nghĩa</i> rằng không xảy ra tương tác trên bệnh nhân.
             </p>	
-			    		  </div>
-    					</div>
-   			</div>	  
-		<div class="model">   
-					<input class="hide" id="model" type="checkbox" name="model" tab-index="2">
-    					<label for="model" >Hướng dẫn</label>
-   					 <div class="model__overlay">
-     					   <div class="model__box">
-					<label for="model">✖</label>
-           
-            <div>
+</div>
+
+<!-- Vertically centered scrollable modal -->
+<div class="modal-dialog modal-dialog-centered" id="exampleModal2" tabindex="0" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+   <div>
                 <b style="color:crimson">TRA CỨU NHANH</b> toàn bộ tương tác chống chỉ định của 1 hoạt chất bất kỳ.
                 <br>
 		    <img src="resources/images/tuong-tac-thuoc-1.png" />
@@ -207,10 +195,7 @@ input:focus + label {
 		<br>
 		    <img src="resources/images/tuong-tac-thuoc-2.PNG" />
             </div>
-            	
-			    		  </div>
-    					</div>
-   			</div>	
+</div>
 		
   	<div class="container">
 	      	<div id="external_filter_container_wrapper" class="">
