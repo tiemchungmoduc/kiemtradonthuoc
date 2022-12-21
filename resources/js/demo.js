@@ -43,7 +43,7 @@ $(document).ready(function () {
         
          // Initialize Typeahead plug-in
          $('.dataTables_filter input[type="search"]', api.table().container())
-            .select2({
+            .typeahead({
                source: dataSrc,
                afterSelect: function(value){
                   api.search(value).draw();
