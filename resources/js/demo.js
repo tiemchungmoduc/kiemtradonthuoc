@@ -23,7 +23,7 @@ $(document).ready(function () {
  var dataSrc = [];
 
    var table = $('#entrys_table').DataTable({
-	    retrieve: true,
+	    destroy: true,
 	   fixedHeader: true,
 	    "responsive": true,
 	   "ordering": false,
@@ -43,7 +43,7 @@ $(document).ready(function () {
         
          // Initialize Typeahead plug-in
          $('.dataTables_filter input[type="search"]', api.table().container())
-            .typeahead({
+            .select2({
                source: dataSrc,
                afterSelect: function(value){
                   api.search(value).draw();
