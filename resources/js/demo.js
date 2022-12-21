@@ -23,7 +23,7 @@ $(document).ready(function () {
  var dataSrc = [];
 
    var table = $('#entrys_table').DataTable({
-	    retrieve: true,
+	    destroy: true,
 	   fixedHeader: true,
 	    "responsive": true,
 	   "ordering": false,
