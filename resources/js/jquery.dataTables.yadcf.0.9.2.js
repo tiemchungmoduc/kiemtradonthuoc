@@ -441,7 +441,7 @@
 			placeholderLang = {
 				'select': 'Select value',
 				'select_multi': 'Select values',
-				'filter': 'Type to filter',
+				'filter': 'Nhập tên hoạt chất',
 				'range': ['From', 'To'],
 				'date': 'Select a date'
 			},
