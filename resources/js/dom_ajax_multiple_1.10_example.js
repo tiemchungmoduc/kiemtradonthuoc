@@ -10,6 +10,15 @@ $(document).ready(function () {
 		fixedHeader: true,
 	    "responsive": true,
     });
+	yadcf.init(oTable, [{
+					        column_number: 1,
+					        filter_type: "auto_complete",
+						select_type: 'chosen'
+					    }, {
+					        column_number: 3,
+					        filter_type: "auto_complete",
+					        select_type: 'select2'
+					    }]);
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
 		filter_container_id: 'multi-column-filter-01', 
