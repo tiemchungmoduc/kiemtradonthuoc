@@ -10,7 +10,7 @@ $(document).ready(function () {
 		fixedHeader: true,
 	    "responsive": true,
     });
-	yadcf.init(oTable, [{
+	yadcf.init(oTable2, [{
 					        column_number: 1,
 					        filter_type: "auto_complete",
 						select_type: 'chosen'
