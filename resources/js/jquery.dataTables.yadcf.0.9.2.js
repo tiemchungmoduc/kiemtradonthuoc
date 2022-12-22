@@ -3962,8 +3962,8 @@
 					}
 				} else if (filterOptions.filter_type === 'multi_select') {
 					if (filterOptions.filter_reset_button_text !== false) {
-						$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " + " id=\"yadcf-filter-" + table_selector_jq_friendly + '-' + column_number_str + "-reset\" onmousedown=\"window.location.href=window.location.href\" " +
-							"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterMultiTablesMultiSelect('" + tablesSelectors + "', event,'" + column_number_str + "','reset'); return false;\" class=\"yadcf-filter-reset-button " + filterOptions.reset_button_style_class + "\">" + filterOptions.filter_reset_button_text + "</button>");
+						$(filter_selector_string).find(".yadcf-filter").after("<button type=\"button\" " + " id=\"yadcf-filter-" + table_selector_jq_friendly + '-' + column_number_str + "-reset\" onmousedown=\"yadcf.stopPropagation(event);\" " +
+							"onclick=\"yadcf.stopPropagation(event);yadcf.doFilterMultiTablesMultiSelect('" + tablesSelectors + "', event,'" + column_number_str + "','clear'); return false;\" class=\"yadcf-filter-reset-button " + filterOptions.reset_button_style_class + "\">" + filterOptions.filter_reset_button_text + "</button>");
 					}
 				}
 
