@@ -6,10 +6,10 @@ var oTable2;
 $(document).ready(function () {
     'use strict';
     oTable2 = $('#entrys_table').DataTable({
-    	//stateSave: true,
-		fixedHeader: true,
-	    "responsive": true,
-	    ordering: false
+    	     stateSave: true,
+	     fixedHeader: true,
+	     responsive: true,
+	     ordering: false
     });
 	yadcf.init(oTable2, [{
 					        column_number: 1,
@@ -28,7 +28,7 @@ $(document).ready(function () {
         	select_type: 'chosen'
 	}]);
 	yadcf.initMultipleColumns(oTable2, [{
-		column_number: [1]&&[2] , 
+		column_number: [1] , 
 		filter_container_id: 'multi-column-filter-02', 
 		filter_default_label: 'Nhập tên hoạt chất',
 		filter_match_mode : "contains",
