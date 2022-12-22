@@ -18,6 +18,14 @@ $(document).ready(function () {
 		filter_type: 'multi_select',
         	select_type: 'select2'
 	}]);
+	yadcf.initMultipleColumns(oTable2, [{
+		column_number: [1, 2], 
+		filter_container_id: 'multi-column-filter-02', 
+		filter_default_label: 'Nhập tên hoạt chất',
+		filter_match_mode : "contains",
+		filter_type: 'auto_complete',
+        	select_type: 'select2'
+	}]);
     SyntaxHighlighter.all();
 
 });
