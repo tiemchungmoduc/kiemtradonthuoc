@@ -16,7 +16,8 @@ $(document).ready(function () {
 						select_type: 'chosen'
 					    }, {
 					        column_number: 2,
-					        filter_type: "auto_complete",
+					        filter_type: 'multi_select',
+        					select_type: 'chosen',
 						filter_container_id: 'multi-column-filter-02',
 					    }],
 		   {
