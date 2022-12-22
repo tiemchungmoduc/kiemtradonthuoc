@@ -16,8 +16,7 @@ $(document).ready(function () {
 						select_type: 'chosen'
 					    }, {
 					        column_number: 2,
-					        filter_type: "auto_complete",
-					        select_type: 'select2'
+					        filter_type: "auto_complete"
 					    }]);
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
