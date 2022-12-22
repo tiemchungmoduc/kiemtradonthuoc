@@ -7,6 +7,8 @@ $(document).ready(function () {
     'use strict';
     oTable2 = $('#entrys_table').DataTable({
     	    stateSave: true,
+	    fixedHeader: true,
+	    "responsive": true,
 	     ordering: false
     });
 	yadcf.initMultipleColumns(oTable2, [{
@@ -22,8 +24,6 @@ $(document).ready(function () {
 
    var table = $('#entrys_table').DataTable({
 	    destroy: true,
-	   fixedHeader: true,
-	    "responsive": true,
 	   "ordering": false,
       'initComplete': function(){
          var api = this.api();
