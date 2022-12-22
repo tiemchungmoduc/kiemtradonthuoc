@@ -15,7 +15,7 @@ $(document).ready(function () {
 					        filter_type: "auto_complete",
 						select_type: 'chosen'
 					    }, {
-					        column_number: 3,
+					        column_number: 2,
 					        filter_type: "auto_complete",
 					        select_type: 'select2'
 					    }]);
