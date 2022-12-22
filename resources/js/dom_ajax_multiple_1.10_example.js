@@ -20,7 +20,7 @@ $(document).ready(function () {
 					        filter_type: 'select',
         					select_type: 'chosen',
 						filter_container_id: 'multi-column-filter-03'
-					    }],
+					    }], {cumulative_filtering: true}
 		  );
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
