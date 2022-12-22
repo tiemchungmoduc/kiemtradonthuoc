@@ -18,7 +18,11 @@ $(document).ready(function () {
 					    }, {
 					        column_number: 2,
 					        filter_type: "auto_complete"
-					    }]);
+					    }],
+		   {
+            cumulative_filtering: true
+                   }
+		  );
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
 		filter_container_id: 'multi-column-filter-01', 
