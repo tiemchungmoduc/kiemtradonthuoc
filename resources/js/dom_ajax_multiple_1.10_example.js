@@ -27,7 +27,7 @@ $(document).ready(function () {
         	select_type: 'chosen'
 	}]);
 	yadcf.initMultipleColumns(oTable2, [{
-		column_number: [1, 2], 
+		column_number: 1 , 
 		filter_container_id: 'multi-column-filter-02', 
 		filter_default_label: 'Nhập tên hoạt chất',
 		filter_match_mode : "contains",
