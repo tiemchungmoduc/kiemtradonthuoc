@@ -14,13 +14,12 @@ $(document).ready(function () {
 					        column_number: 1,
 					        filter_type: "select",
 						select_type: 'chosen',
-						filter_container_id: 'multi-column-filter-02',
+						filter_container_id: 'multi-column-filter-02'
 					    }, {
 					        column_number: 2,
-					        filter_type: 'multi_select',
+					        filter_type: 'select',
         					select_type: 'chosen',
-						filter_container_id: 'multi-column-filter-03',
-						cumulative_filtering: true
+						filter_container_id: 'multi-column-filter-03'
 					    }],
 		  );
 	yadcf.initMultipleColumns(oTable2, [{
