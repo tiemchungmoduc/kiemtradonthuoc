@@ -12,17 +12,16 @@ $(document).ready(function () {
     });
 	yadcf.init(oTable2, [{
 					        column_number: 1,
-					        filter_type: "auto_complete",
-						select_type: 'chosen'
+					        filter_type: "select",
+						select_type: 'chosen',
+						filter_container_id: 'multi-column-filter-02',
 					    }, {
 					        column_number: 2,
 					        filter_type: 'multi_select',
         					select_type: 'chosen',
-						filter_container_id: 'multi-column-filter-02',
+						filter_container_id: 'multi-column-filter-03',
+						cumulative_filtering: true
 					    }],
-		   {
-            cumulative_filtering: true
-                   }
 		  );
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
@@ -34,7 +33,7 @@ $(document).ready(function () {
 	}]);
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1] , 
-		filter_container_id: 'multi-column-filter-03', 
+		filter_container_id: 'multi-column-filter-04', 
 		filter_default_label: 'Nhập tên hoạt chất',
 		filter_match_mode : "contains",
 		filter_type: 'select',
