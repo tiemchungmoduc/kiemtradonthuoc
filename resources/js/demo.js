@@ -27,7 +27,7 @@ $(document).ready(function () {
 		filter_default_label: 'Nhập tên hoạt chất',
 		filter_match_mode : "contains",
 		filter_type: 'multi_select',
-        	select_type: 'select2'
+        	select_type: 'chosen'
 	}]);
     SyntaxHighlighter.all();
  var dataSrc = [];
