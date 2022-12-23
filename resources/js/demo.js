@@ -14,7 +14,9 @@ $(document).ready(function () {
 	yadcf.init(oTable2, [{
 					        column_number: 1,
 					        filter_type: "select",
-						select_type: 'chosen'
+						select_type: 'chosen',
+						column_data_type: "html",
+        					html_data_type: "text"
 					    }, {
 					        column_number: 2,
 					        filter_type: 'select',
