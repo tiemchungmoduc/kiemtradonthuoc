@@ -9,7 +9,7 @@ $(document).ready(function () {
     	    //stateSave: true,
 	    fixedHeader: true,
 	    "responsive": true,
-	    "language": {"url": "//raw.githubusercontent.com/buidathieu/vacxin.github.io/master/vi.json" },
+	    //"language": {"url": "//raw.githubusercontent.com/buidathieu/vacxin.github.io/master/vi.json" },
 	     ordering: false
     });
 	yadcf.init(oTable2, [{
