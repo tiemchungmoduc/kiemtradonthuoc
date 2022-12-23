@@ -6,7 +6,7 @@ var oTable2;
 $(document).ready(function () {
     'use strict';
     oTable2 = $('#entrys_table').DataTable({
-    	    stateSave: true,
+    	    //stateSave: true,
 	    fixedHeader: true,
 	    "responsive": true,
 	     ordering: false
@@ -33,6 +33,8 @@ $(document).ready(function () {
  var dataSrc = [];
 
    var table = $('#entrys_table').DataTable({
+	   fixedHeader: true,
+	    "responsive": true,
 	    destroy: true,
 	   "ordering": false,
       'initComplete': function(){
