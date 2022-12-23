@@ -8,7 +8,7 @@ $(document).ready(function () {
     oTable2 = $('#entrys_table').DataTable({
     	    //stateSave: true,
 	    fixedHeader: true,
-	    //"responsive": true,
+	    "responsive": true,
 	     ordering: false
     });
 	yadcf.init(oTable2, [{
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
    var table = $('#entrys_table').DataTable({
 	   fixedHeader: true,
-	    "responsive": true,
+	    //"responsive": true,
 	    destroy: true,
 	   "ordering": false,
       'initComplete': function(){
