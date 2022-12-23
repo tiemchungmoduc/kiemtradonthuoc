@@ -9,6 +9,7 @@ $(document).ready(function () {
     	    //stateSave: true,
 	    fixedHeader: true,
 	    "responsive": true,
+	    "language": {"url": "//raw.githubusercontent.com/buidathieu/vacxin.github.io/master/vi.json" },
 	     ordering: false
     });
 	yadcf.init(oTable2, [{
@@ -40,14 +41,14 @@ $(document).ready(function () {
         	select_type: 'chosen'
 	}]);
     SyntaxHighlighter.all();
- var dataSrc = [];
-
+   
+   var dataSrc = [];
    var table = $('#entrys_table').DataTable({
-	   fixedHeader: true,
+	    fixedHeader: true,
 	    //"responsive": true,
 	    destroy: true,
 	   "ordering": false,
-      'initComplete': function(){
+     'initComplete': function(){
          var api = this.api();
 
          // Populate a dataset for autocomplete functionality
@@ -56,7 +57,7 @@ $(document).ready(function () {
             // Get cell data as plain text
             var data = $('<div>').html(this.data()).text();           
             if(dataSrc.indexOf(data) === -1){ dataSrc.push(data); }
-         });
+            					 });
          
          // Sort dataset alphabetically
          dataSrc.sort();
@@ -67,9 +68,8 @@ $(document).ready(function () {
                source: dataSrc,
                afterSelect: function(value){
                   api.search(value).draw();
-               }
-            }
-         );
-      }
-   });
+                      		           }
+                       });
+                   			}
+       						});
 });
