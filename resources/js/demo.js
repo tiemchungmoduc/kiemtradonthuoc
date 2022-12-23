@@ -11,6 +11,16 @@ $(document).ready(function () {
 	    "responsive": true,
 	     ordering: false
     });
+	yadcf.init(oTable2, [{
+					        column_number: 1,
+					        filter_type: "select",
+						select_type: 'chosen'
+					    }, {
+					        column_number: 2,
+					        filter_type: 'select',
+        					select_type: 'chosen'
+					    }], {cumulative_filtering: true}
+		  );
 	yadcf.initMultipleColumns(oTable2, [{
 		column_number: [1, 2], 
 		filter_container_id: 'multi-column-filter-01', 
