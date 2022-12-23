@@ -59,10 +59,12 @@ $(document).ready(function () {
          
          // Sort dataset alphabetically
          dataSrc.sort();
+	     var opts = table.column(1).data();
+ 	  //var okela = table.column(0).data();
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [
-   		data: dataSrc,
+   		data: opts,
     		filter_container_id: 'multi-column-filter-04', 
 	  	filter_type: "select", 
 	  	select_type: "chosen", 
