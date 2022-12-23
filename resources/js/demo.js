@@ -14,7 +14,12 @@ $(document).ready(function () {
 	yadcf.init(oTable2, [{
 					        column_number: 1,
 					        filter_type: "select",
-						select_type: 'chosen'
+						select_type: 'chosen',
+						filter_default_label: "Nhập tên hoạt chất",
+    						select_type_options: {
+     							width: '180px',
+      							dropdownAutoWidth: true,
+    									}
 					    }, {
 					        column_number: 2,
 					        filter_type: 'select',
