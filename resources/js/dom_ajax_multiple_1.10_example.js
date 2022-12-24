@@ -41,7 +41,7 @@ $(document).ready(function () {
 	
 	 // Sort dataset alphabetically
          //dataSrc.sort();
-	     var opts = table.column(3).data();
+	     var opts = oTable2.column(3).data();
  	  //var okela = table.column(0).data();
         
          // Initialize Typeahead plug-in
