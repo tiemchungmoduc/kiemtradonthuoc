@@ -19,7 +19,7 @@ $(document).ready(function () {
 					        column_number: 2,
 					        filter_type: 'select',
         					select_type: 'chosen',
-						filter_container_id: 'multi-column-filter-03'
+						filter_container_id: 'multi-column-filter-05'
 					    }], {cumulative_filtering: true}
 		  );
 	yadcf.initMultipleColumns(oTable2, [{
@@ -41,13 +41,13 @@ $(document).ready(function () {
 	
 	 // Sort dataset alphabetically
          dataSrc.sort();
-	     var opts = table.column(1).data();
+	     var opts = table.column(3).data();
  	  //var okela = table.column(0).data();
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [{
    		data: opts,
-    		filter_container_id: 'multi-column-filter-04', 
+    		filter_container_id: 'multi-column-filter-03', 
 	  	filter_type: "select", 
 	  	select_type: "chosen", 
 	  	filter_default_label: "Nhập tên hoạt chất",
