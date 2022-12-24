@@ -38,32 +38,14 @@ $(document).ready(function () {
 		filter_type: 'select',
 		select_type: 'chosen'
 	}]);
-    SyntaxHighlighter.all();
 	
-	var dataSrc = [];
-   var table = $('#entrys_table').DataTable({
-	    fixedHeader: true,
-	    //"responsive": true,
-	    destroy: true,
-	   "ordering": false,
-     'initComplete': function(){
-         var api = this.api();
-
-         // Populate a dataset for autocomplete functionality
-         // using data from first, second and third columns
-         api.cells('tr', [1, 2]).every(function(){
-            // Get cell data as plain text
-            var data = $('<div>').html(this.data()).text();           
-            if(dataSrc.indexOf(data) === -1){ dataSrc.push(data); }
-            					 });
-         
-         // Sort dataset alphabetically
+	 // Sort dataset alphabetically
          dataSrc.sort();
 	     var opts = table.column(1).data();
  	  //var okela = table.column(0).data();
         
          // Initialize Typeahead plug-in
-         yadcf.initMultipleColumns(oTable2, [
+         yadcf.initMultipleColumns(oTable2, [{
    		data: opts,
     		filter_container_id: 'multi-column-filter-04', 
 	  	filter_type: "select", 
@@ -73,8 +55,8 @@ $(document).ready(function () {
      			 width: '180px',
       			 dropdownAutoWidth: true,
     				     }
-					     ]);
-	                               }
-       						});
+	 }]);
+    SyntaxHighlighter.all();
+	
 
 });
