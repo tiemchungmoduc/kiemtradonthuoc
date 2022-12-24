@@ -42,18 +42,19 @@ $(document).ready(function () {
 	 // Sort dataset alphabetically
          //dataSrc.sort();
 	     var opts = oTable2.column(3).data();
- 	  //var okela = table.column(0).data();
+ 	     var okela = oTable2.column(0).data();
+	     var aloha = opts.concat(okela);
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [{
-   		data: opts,
+   		data: aloha,
     		filter_container_id: 'multi-column-filter-03', 
 	  	filter_type: "select", 
 	  	select_type: "chosen", 
 	  	filter_default_label: "Nhập tên hoạt chất",
     		select_type_options: {
      			 width: '180px',
-      			 dropdownAutoWidth: true,
+      			 dropdownAutoWidth: '180px',
     				     }
 	 }]);
     SyntaxHighlighter.all();
