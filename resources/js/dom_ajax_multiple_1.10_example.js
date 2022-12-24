@@ -40,7 +40,7 @@ $(document).ready(function () {
 	}]);
 	
 	 // Sort dataset alphabetically
-         dataSrc.sort();
+         //dataSrc.sort();
 	     var opts = table.column(3).data();
  	  //var okela = table.column(0).data();
         
