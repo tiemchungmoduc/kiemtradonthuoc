@@ -43,7 +43,7 @@ $(document).ready(function () {
          //dataSrc.sort();
 	     var opts = oTable2.column(3).data();
  	     var okela = oTable2.column(0).data();
-	     var aloha = opts.concat(okela);
+	     var aloha = opts.push(...okela);
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [{
