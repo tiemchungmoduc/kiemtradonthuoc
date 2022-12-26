@@ -39,7 +39,8 @@ $(document).ready(function () {
 		filter_match_mode : "contains",
 		filter_type: 'multi_select',
         	select_type: 'chosen'
-	}]);
+	}], {cumulative_filtering: true}
+	);
     SyntaxHighlighter.all();
    
    var dataSrc = [];
