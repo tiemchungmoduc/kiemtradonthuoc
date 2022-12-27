@@ -41,13 +41,16 @@ $(document).ready(function () {
 	
 	 // Sort dataset alphabetically
          //dataSrc.sort();
-	     var opts = oTable2.column(3).data();
- 	     var okela = oTable2.column(0).data();
-	     var aloha = { ...opts, ...okela };
+	     var opt1 = oTable2.column(1).data();
+ 	     var opt2 = oTable2.column(2).data();
+	     aloha = Object.values(opt1).slice(0, 101);
+	     alohe = Object.values(opt2).slice(0, 101);
+	     olala = [...aloha, ...alohe];
+	     let olili = [...new Set(olala)];
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [{
-   		data: aloha,
+   		data: olili,
     		filter_container_id: 'multi-column-filter-03', 
 	  	filter_type: "select", 
 	  	select_type: "chosen", 
