@@ -43,8 +43,8 @@ $(document).ready(function () {
          //dataSrc.sort();
 	     var opt1 = oTable2.column(1).data();
  	     var opt2 = oTable2.column(2).data();
-	     var aloha = Object.values(opt1).slice(0, 101);
-	     var alohe = Object.values(opt2).slice(0, 101);
+	     var aloha = Object.values(opt1).slice(0, 301);
+	     var alohe = Object.values(opt2).slice(0, 301);
 	     var olala = [...aloha, ...alohe];
 	     var olili = [...new Set(olala)];
         
@@ -52,7 +52,7 @@ $(document).ready(function () {
          yadcf.initMultipleColumns(oTable2, [{
    		data: olili,
     		filter_container_id: 'multi-column-filter-03', 
-	  	filter_type: "select", 
+	  	filter_type: "multi_select", 
 	  	select_type: "chosen", 
 	  	filter_default_label: "Nhập tên hoạt chất",
     		select_type_options: {
