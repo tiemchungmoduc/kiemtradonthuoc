@@ -52,8 +52,9 @@ $(document).ready(function () {
          yadcf.initMultipleColumns(oTable2, [{
    		data: olili,
     		filter_container_id: 'multi-column-filter-03', 
+		column_number: [1, 2], 
 	  	filter_type: "select", 
-	  	select_type: "select2", 
+	  	select_type: "chosen", 
 	  	filter_default_label: "Nhập tên hoạt chất",
     		select_type_options: {
      			 width: '180px',
