@@ -46,7 +46,7 @@ $(document).ready(function () {
 	     aloha = Object.values(opt1).slice(0, 101);
 	     alohe = Object.values(opt2).slice(0, 101);
 	     olala = [...aloha, ...alohe];
-	     let olili = [...new Set(olala)];
+	     olili = [...new Set(olala)];
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [{
