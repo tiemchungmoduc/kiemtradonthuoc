@@ -43,10 +43,10 @@ $(document).ready(function () {
          //dataSrc.sort();
 	     var opt1 = oTable2.column(1).data();
  	     var opt2 = oTable2.column(2).data();
-	     aloha = Object.values(opt1).slice(0, 101);
-	     alohe = Object.values(opt2).slice(0, 101);
-	     olala = [...aloha, ...alohe];
-	     olili = [...new Set(olala)];
+	     var aloha = Object.values(opt1).slice(0, 101);
+	     var alohe = Object.values(opt2).slice(0, 101);
+	     var olala = [...aloha, ...alohe];
+	     var olili = [...new Set(olala)];
         
          // Initialize Typeahead plug-in
          yadcf.initMultipleColumns(oTable2, [{
