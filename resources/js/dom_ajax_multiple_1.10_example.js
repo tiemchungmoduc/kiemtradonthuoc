@@ -53,7 +53,7 @@ $(document).ready(function () {
    		data: olili,
     		filter_container_id: 'multi-column-filter-03', 
 		column_number: [1, 2], 
-	  	filter_type: "select", 
+	  	filter_type: "multi_select", 
 	  	select_type: "chosen", 
 	  	filter_default_label: "Nhập tên hoạt chất",
     		select_type_options: {
