@@ -54,7 +54,7 @@ $(document).ready(function () {
     		filter_container_id: 'multi-column-filter-03', 
 		column_number: [1, 2], 
 	  	filter_type: "multi_select", 
-	  	select_type: "chosen", 
+	  	select_type: "select2", 
 	  	filter_default_label: "Nhập tên hoạt chất",
     		select_type_options: {
      			 width: '180px',
