@@ -43,7 +43,7 @@ $(document).ready(function () {
          //dataSrc.sort();
 	     var opt1 = oTable2.column(1).data();
  	     var opt2 = oTable2.column(2).data();
-	     var aloha = Object.values(opt1);
+	     var aloha = Object.values(opt1).slice(0, 301);
 	     var alohe = Object.values(opt2).slice(0, 301);
 	     var olala = [...aloha, ...alohe];
 	     var olili = [...new Set(olala)];
