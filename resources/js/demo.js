@@ -12,6 +12,16 @@ $(document).ready(function () {
 	    //"language": {"url": "//raw.githubusercontent.com/buidathieu/vacxin.github.io/master/vi.json" },
 	     ordering: false
     });
+	yadcf.initMultipleColumns(oTable2, [{
+		column_number: [1, 2], 
+		filter_container_id: 'multi-column-filter-01', 
+		filter_default_label: 'Nhập tên hoạt chất',
+		filter_match_mode : "contains",
+		filter_type: 'multi_select',
+        	select_type: 'chosen'
+	}], {cumulative_filtering: true}
+	);
+	
 	yadcf.init(oTable2, [{
 					        column_number: 1,
 					        filter_type: "select",
@@ -32,15 +42,7 @@ $(document).ready(function () {
     									}
 					    }], {cumulative_filtering: true}
 		  );
-	yadcf.initMultipleColumns(oTable2, [{
-		column_number: [1, 2], 
-		filter_container_id: 'multi-column-filter-01', 
-		filter_default_label: 'Nhập tên hoạt chất',
-		filter_match_mode : "contains",
-		filter_type: 'multi_select',
-        	select_type: 'chosen'
-	}], {cumulative_filtering: true}
-	);
+	
     SyntaxHighlighter.all();
    
    var dataSrc = [];
